@@ -1,0 +1,234 @@
+BMA SCREENSHOT ANALYZER - EINFACHE SCHRITT-FUER-SCHRITT-ANLEITUNG
+=================================================================
+
+WICHTIG VOR DEM START
+---------------------
+
+1. Den kompletten Ordner "BMA Screenshot Analyzer Portable" kopieren.
+2. Niemals nur die EXE einzeln kopieren.
+3. Die Ordner "Dependencies" und "OCR-Modelle" nicht umbenennen,
+   verschieben oder loeschen.
+4. Die Datei "MelderService Grundexcel.xlsx" nicht umbenennen,
+   verschieben oder loeschen.
+5. Es wird keine Installation und keine Internetverbindung benoetigt.
+
+
+SO MUSS JEDER SCREENSHOT AUSSEHEN
+--------------------------------
+
+Oeffne zum Vergleich die mitgelieferte Datei:
+
+    Beispiel - korrektes Screenshot-Format.png
+
+Der Screenshot muss EXAKT dieselbe Diagnose-Ansicht zeigen:
+
+- Oben steht "Diagnose".
+- Die LSN-Nummer und "Adresse" sind sichtbar.
+- Die Zeile "Letzte Aktualisierung" ist sichtbar.
+- Die komplette Tabellenueberschrift ist sichtbar:
+  Nr. | Element-Typ | Adresse | Btr.Std | CO-Fehl. | Vrs
+- Darunter sind genau 7 vollstaendige Melderzeilen sichtbar.
+- Kein Teil der Tabelle darf abgeschnitten oder verdeckt sein.
+- Keine Windows-Fenster, Mauszeiger, Menues oder Meldungen duerfen
+  ueber der Tabelle liegen.
+- Das Bild darf nicht zugeschnitten, vergroessert, verkleinert,
+  gedreht oder nachbearbeitet werden.
+- Das richtige Beispiel hat 611 x 406 Pixel und ist eine PNG-Datei.
+
+Am sichersten ist es, jeden Screenshot genau so aufzunehmen und als
+PNG zu speichern. Andere Ansichten oder Formate koennen zu falschen
+Ergebnissen fuehren.
+
+
+PROGRAMM STARTEN
+----------------
+
+1. Oeffne den Ordner "BMA Screenshot Analyzer Portable".
+2. Doppelklicke auf:
+
+    BMA Screenshot Analyzer.exe
+
+3. Warte, bis das Programmfenster erscheint.
+4. Beim ersten Laden der OCR-Modelle kann das Programm etwas Zeit
+   benoetigen. Nicht mehrfach klicken und das Fenster nicht schliessen.
+
+
+SCHRITT 1 VON 4 - ARBEITSORDNER UND STANDORT
+--------------------------------------------
+
+Feld "Arbeitsordner":
+
+- Normalerweise steht hier bereits der portable Programmordner.
+- In diesem Ordner muessen die EXE, die Excel-Vorlage und der Ordner
+  "OCR-Modelle" liegen.
+- Nur falls der falsche Ordner eingetragen ist:
+  1. Klicke auf "Ordner auswaehlen...".
+  2. Waehle den Ordner "BMA Screenshot Analyzer Portable".
+  3. Bestaetige die Auswahl.
+
+Feld "Standort":
+
+- Trage den Namen des Standorts bzw. Objekts ein.
+- Beispiel: "Bad Cannstatt".
+- Dieser Text wird spaeter in die Excel-Datei geschrieben.
+
+Button "Ordner auswaehlen...":
+
+- Oeffnet die Ordnerauswahl fuer den Arbeitsordner.
+- Nicht benutzen, wenn bereits der richtige portable Ordner angezeigt wird.
+
+Button "Weiter ->":
+
+- Prueft Arbeitsordner, Excel-Vorlage und OCR-Modelle.
+- Laedt danach die lokalen OCR-Modelle.
+- Erst klicken, wenn der Standort eingetragen ist.
+
+
+SCHRITT 2 VON 4 - RING-ORDNER ERSTELLEN
+---------------------------------------
+
+Feld "Wie viele Ringe brauchst du?":
+
+- Trage die Anzahl der vorhandenen Ringe ein.
+- Beispiel: Bei Ring 1 bis Ring 6 wird die Zahl 6 eingetragen.
+
+Button "<- Zurueck":
+
+- Geht zu Schritt 1 zurueck.
+- Bereits eingetragene Angaben koennen dort kontrolliert werden.
+
+Button "Ordner erstellen & weiter ->":
+
+- Erstellt fuer jeden Ring einen Ordner:
+  "Ring 1", "Ring 2", "Ring 3" usw.
+- Oeffnet danach Schritt 3.
+
+
+SCHRITT 3 VON 4 - LSN EINTRAGEN
+-------------------------------
+
+Fuer jeden Ring gibt es ein eigenes LSN-Feld.
+
+1. Trage bei jedem Ring die richtige LSN-Nummer ein.
+2. Nur die Zahl eintragen.
+3. Beispiel:
+
+    Ring 1: 6
+
+   Daraus wird der Ordner:
+
+    Ring 1 LSN 6
+
+4. Kontrolliere jede Nummer sorgfaeltig.
+
+Button "<- Zurueck":
+
+- Geht zu Schritt 2 zurueck.
+
+Button "Speichern & Umbenennen ->":
+
+- Speichert die LSN-Nummern.
+- Benennt die Ring-Ordner entsprechend um.
+- Beispiel: "Ring 1" wird zu "Ring 1 LSN 6".
+- Oeffnet danach Schritt 4.
+
+
+SCHRITT 4 VON 4 - SCREENSHOTS EINFUEGEN UND AUSWERTEN
+------------------------------------------------------
+
+1. Das Programmfenster geoeffnet lassen.
+2. Oeffne den Ordner "BMA Screenshot Analyzer Portable".
+3. Oeffne den passenden Ring-Ordner.
+4. Kopiere die Diagnose-Screenshots in den richtigen Ring-Ordner.
+
+Beispiel:
+
+    Screenshots fuer Ring 1 / LSN 6
+    kommen in den Ordner "Ring 1 LSN 6".
+
+5. Wiederhole das fuer alle Ringe.
+6. Kontrolliere noch einmal:
+
+- Jeder Screenshot liegt im richtigen Ring-Ordner.
+- Jeder Screenshot sieht exakt wie das Beispielbild aus.
+- Keine fremden Bilder liegen in den Ring-Ordnern.
+- Keine Screenshots fehlen.
+
+Button "<- Zurueck":
+
+- Geht zu Schritt 3 zurueck.
+
+Button "START":
+
+- Startet die lokale OCR-Auswertung.
+- Liest alle Screenshots aus den Ring-Ordnern.
+- Erstellt in jedem bearbeiteten Ring-Ordner eine Excel-Datei.
+- Das Programm waehrend der Verarbeitung nicht schliessen.
+- Warten, bis unten im Log "Fertig." erscheint.
+
+
+ERGEBNIS FINDEN
+---------------
+
+Nach erfolgreicher Verarbeitung liegt in jedem Ring-Ordner eine Datei
+mit einem Namen wie:
+
+    MelderService Ring 1.xlsx
+    MelderService Ring 2.xlsx
+
+Oeffne die Datei und kontrolliere mindestens:
+
+- Standort
+- Ringnummer
+- LSN-Nummer
+- Anzahl der Eintraege
+- Element-Typ
+- Adresse
+- Betriebsstunden
+- CO-Fehler
+- Versionswert
+
+
+WENN ETWAS NICHT FUNKTIONIERT
+-----------------------------
+
+"Projektordner nicht bereit":
+
+- Pruefe, ob die EXE, "MelderService Grundexcel.xlsx" und
+  "OCR-Modelle" noch im portablen Ordner liegen.
+- Starte die EXE direkt aus diesem Ordner.
+
+"Standort fehlt":
+
+- In Schritt 1 einen Standort eintragen.
+
+"LSN fehlt oder ist ungueltig":
+
+- In Schritt 3 bei jedem Ring eine ganze Zahl eintragen.
+
+"Keine Bilder":
+
+- Pruefe, ob die Screenshots im richtigen Ring-Ordner liegen.
+- Verwende PNG-Dateien im Format des Beispielbildes.
+
+Eine Excel-Datei fehlt:
+
+- Pruefe das Log im Programm.
+- Pruefe, ob im betreffenden Ring-Ordner Screenshots vorhanden sind.
+- Pruefe, ob alle Screenshots exakt die richtige Diagnose-Ansicht zeigen.
+
+
+KURZFASSUNG
+-----------
+
+1. EXE starten.
+2. Standort eintragen.
+3. "Weiter ->" klicken.
+4. Anzahl der Ringe eintragen.
+5. "Ordner erstellen & weiter ->" klicken.
+6. Fuer jeden Ring die LSN-Nummer eintragen.
+7. "Speichern & Umbenennen ->" klicken.
+8. Passende Screenshots in die passenden Ring-Ordner kopieren.
+9. "START" klicken.
+10. Warten, bis "Fertig." erscheint.
+11. Excel-Dateien in den Ring-Ordnern kontrollieren.

@@ -1,0 +1,4 @@
+*.pdiparams -diff
+*.xlsx -diff
+*.png -diff
+*.ico -diff
